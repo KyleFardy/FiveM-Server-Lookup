@@ -51,8 +51,8 @@ namespace FiveM_Server_Lookup
             players_parsed = null;
             information_parsed = null;
             resolved_ip_address = null;
-            clients_online_count.Text = "Clients Online : <b>0</b>";
-            tags.Text = "Tags : <b>None</b>";
+            clients_online_count.Text = "Clients Online : 0";
+            tags.Text = "Tags : None";
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -162,8 +162,8 @@ namespace FiveM_Server_Lookup
                                 banner_detail.ImageLocation = information_parsed.vars.banner_detail;
                                 logo.Image = load_image((information_parsed.icon).ToString());
                                 groupControl3.Text = dynamic_parsed.hostname;
-                                clients_online_count.Text = "Clients Online : <b>" + dynamic_parsed.clients + "</b>";
-                                tags.Text = "Tags : <b>" + information_parsed.vars.tags + "</b>";
+                                clients_online_count.Text = "Clients Online : " + dynamic_parsed.clients;
+                                tags.Text = "Tags : " + information_parsed.vars.tags;
                             }
                             else
                             {
